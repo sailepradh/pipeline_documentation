@@ -24,15 +24,18 @@ sections:
       - name: Introduction
         type: text
         content: |
-              This automatic documentation generation is a time-saving tool for developers and teams, as it eliminates the need to manually create and maintain documentation. It also helps ensure that documentation is up-to-date and consistent, as changes made to the pipeline.yaml file used for the document updation in a simple and easy way. 
-  
-              The pipeline.yaml file contains all the relevant information about the pipeline or tool, including the description, inputs, outputs, parameters, and usage. This information is used to generate the HTML and MD documents, which provide clear and detailed information about the pipeline or tool.
-            
-              The HTML document is visually appealing and easy to navigate, with links to different sections and a search bar for quickly finding specific information. The MD document is plain text, but can be formatted with Markdown syntax for a more readable and structured format. The MD document can be uploaded to a readthedocs server for online documentation. It uses the mkdocs format, with the required "docs" folder and related files in the project root folder. 
-            
-              Additionally, the generated documentation also includes a table of contents for easy navigation, and sections for examples. 
-            
-              Overall, this repo helps improve the documentation process for pipelines and tools, making it easier for others to understand and use them. 
+
+          **CMD Somatic Panel Pipeline** is a nextflow based clinical bioinformatics pipeline.The pipeline takes raw sequencing files as *fastq.gz* from *samplesheet.csv* along with other meta data among others - sample type, sex, number of reads etc. The pipeline is intended to run in CMD high performance clusters (grace or hopper) along with all the references files in the config file. The results produced by the pipelines are visualized and reported in in-house interpretation and visualization tools.
+
+          This automatic documentation generation is a time-saving tool for developers and teams, as it eliminates the need to manually create and maintain documentation. It also helps ensure that documentation is up-to-date and consistent, as changes made to the pipeline.yaml file used for the document updation in a simple and easy way. 
+
+          The pipeline.yaml file contains all the relevant information about the pipeline or tool, including the description, inputs, outputs, parameters, and usage. This information is used to generate the HTML and MD documents, which provide clear and detailed information about the pipeline or tool.
+
+          The HTML document is visually appealing and easy to navigate, with links to different sections and a search bar for quickly finding specific information. The MD document is plain text, but can be formatted with Markdown syntax for a more readable and structured format. The MD document can be uploaded to a readthedocs server for online documentation. It uses the mkdocs format, with the required "docs" folder and related files in the project root folder. 
+
+          Additionally, the generated documentation also includes a table of contents for easy navigation, and sections for examples. 
+
+          Overall, this repo helps improve the documentation process for pipelines and tools, making it easier for others to understand and use them.
   - name: Scope
     headings:
       - name: Purpose
@@ -105,7 +108,7 @@ sections:
           To generate online Markdown(MD) file in your project folder, clone the repo and execute the python script src/main.py.
 
           To learn how to parse parameters for the script, run, 
-          
+
           `python3 src/main.py -h`
 
           To create an example script using the provided template files in the repo location, run,
@@ -156,7 +159,7 @@ profiles:
           The input data for the pipeline consists of fastq files. However, for the pipeline to consume the data, it needs to be provided in the form of a CSV file that includes metadata...
       - name: Input CSV
         type: file
-        content: 'static/profiles/myeloid/input.csv'
+        content: "static/profiles/myeloid/input.csv"
       - name: Column Descriptions
         type: dictionary
         content:
@@ -173,7 +176,7 @@ profiles:
           VCF: A VCF file is a text file format used to store and annotate genetic variation data, such as single nucleotide polymorphisms (SNPs) and small insertions/deletions (indels), identified from sequencing data.
       - name: Software Versions
         type: versions
-        content: 'static/profiles/myeloid/versions.yml'
+        content: "static/profiles/myeloid/versions.yml"
   - name: Solid
     headings:
       - name: Description
@@ -182,7 +185,7 @@ profiles:
           The input data for the pipeline consists of fastq files. However, for the pipeline to consume the data, it needs to be provided in the form of a CSV file that includes metadata...
       - name: Input CSV
         type: file
-        content: 'static/profiles/solid/input.csv'
+        content: "static/profiles/solid/input.csv"
       - name: Column Descriptions
         type: dictionary
         content:
@@ -201,7 +204,7 @@ profiles:
           Markdown_Files: A Markdown file is a lightweight markup language used to format and structure plain text documents, often used for creating documentation, README files, and notes
       - name: Software Versions
         type: versions
-        content: 'static/profiles/solid/versions.yml'
+        content: "static/profiles/solid/versions.yml"
 workflows:
   - name: Workflow Diagram
     headings:

@@ -6,6 +6,7 @@ example_command.sh
 todo.txt
 bin/__pycache__/
 .venv/
+venv/
 
 # Ignore all .pyc files
 *.pyc
