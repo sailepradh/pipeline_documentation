@@ -11,11 +11,11 @@
 pipeline:
   logo: static/images/rs-logo-color.svg
   info:
-    name: Pipeline Documentation
-    version: v1.1.0
-    author: Ram Sai Nanduri
-    author_email: Ram.Nanduri@skane.se
-    git_repo: https://github.com/ramsainanduri/pipeline_documentation
+    name: Somatic Panel Pipeline
+    version: v2.0.0
+    author: CMD
+    author_email: CMD@skane.se
+    git_repo: https://github.com/Clinical-Genomics-Lund/SomaticPanelPipeline
 
 # The sections section consists of a list of sections for the documentation, such as Introduction, Scope, and Input Data, pipeline components, etc.
 sections:
@@ -26,6 +26,15 @@ sections:
         content: |
 
           **CMD Somatic Panel Pipeline** is a nextflow based clinical bioinformatics pipeline.The pipeline takes raw sequencing files as *fastq.gz* from *samplesheet.csv* along with other meta data among others - sample type, sex, number of reads etc. The pipeline is intended to run in CMD high performance clusters (grace or hopper) along with all the references files in the config file. The results produced by the pipelines are visualized and reported in in-house interpretation and visualization tools.
+
+
+          To start the pipeline in command line simply run as
+
+          ```console
+            $ nextflow run main.nf -entry SPP -c nextflow.hopper_test.config --csv Sample.csv -profile solid,hg38
+
+          ```
+
 
           This automatic documentation generation is a time-saving tool for developers and teams, as it eliminates the need to manually create and maintain documentation. It also helps ensure that documentation is up-to-date and consistent, as changes made to the pipeline.yaml file used for the document updation in a simple and easy way. 
 

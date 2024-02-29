@@ -1,6 +1,6 @@
-site_name: Pipeline Documentation
-site_url: https://github.com/ramsainanduri/pipeline_documentation
-github_url: https://github.com/ramsainanduri/pipeline_documentation
+site_name: Somatic Panel Pipeline
+site_url: https://github.com/Clinical-Genomics-Lund/SomaticPanelPipeline
+github_url: https://github.com/Clinical-Genomics-Lund/SomaticPanelPipeline
 nav:
 - Home: index.md
 - Introduction: Introduction.md

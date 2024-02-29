@@ -11,23 +11,23 @@
   <tbody>
     <tr>
       <td>name</td>
-      <td>Pipeline Documentation</td>
+      <td>Somatic Panel Pipeline</td>
     </tr>
     <tr>
       <td>version</td>
-      <td>v1.1.0</td>
+      <td>v2.0.0</td>
     </tr>
     <tr>
       <td>author</td>
-      <td>Ram Sai Nanduri</td>
+      <td>CMD</td>
     </tr>
     <tr>
       <td>author_email</td>
-      <td>Ram.Nanduri@skane.se</td>
+      <td>CMD@skane.se</td>
     </tr>
     <tr>
       <td>git_repo</td>
-      <td>https://github.com/ramsainanduri/pipeline_documentation</td>
+      <td>https://github.com/Clinical-Genomics-Lund/SomaticPanelPipeline</td>
     </tr>
   </tbody>
 </table>
